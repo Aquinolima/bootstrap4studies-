@@ -1,0 +1,15 @@
+header {
+    background-color: #f8f9fa;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: darkred;
+}
+
+.nav-item:hover{
+    color: #2E879B;
+    text-decoration: to-upper-case($string: "");
+}
+
+main {
+    padding: 20px;
+}
