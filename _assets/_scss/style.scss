@@ -1,3 +1,6 @@
+// Para rodar o sass deve-se iniciar o seguinte comando na pasta do arquivo:
+//     sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler
+
 // Start hearder and navbar
 
 header {
@@ -49,4 +52,21 @@ header {
 
 #carouselSite {
     max-height: 300px;
+}
+
+// Start Scrollspy
+
+.botaoScroll {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.textScroll{
+    margin: 10px;
+}
+
+.scrollSpySite{
+    position: relative;
+    overflow: auto;
+    height: 440px;
 }
