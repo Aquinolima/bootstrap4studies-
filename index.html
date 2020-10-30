@@ -8,7 +8,9 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-	<link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+	<link rel="stylesheet" href="_assets/_style/_css/style.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/all.css">
+	<script src="node_modules/font-awesome/js/all.js"></script>
 
 	<title>Curso de Bootstrap 4</title>
 </head>
@@ -103,7 +105,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center my-5">
-					<h1 class="display-3">Hello, world!</h1>
+					<h1 class="display-3"><i class="fab fa-autoprefixer text-primary" aria-hidden="true"></i> Hello, world!
+					</h1>
 					<p>Descrição de um "hello, world!"</p>
 					<a href="#" class="btn btn-primary botaoScroll">Teste de botão</a><a href="#"
 						class="btn btn-primary botaoScroll">Teste de botão 2</a>
@@ -294,7 +297,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 text-center">
-						<h1 class="displat-4">Título Jumbotron</h1>
+						<h1 class="display-4"><i class="fas fa-film text-primary"></i> Título Jumbotron</h1>
 						<p class="lead">Texto modelo jumbotron. <br> Lorem Ipsum is simply dummy text of the printing and
 							typesetting industry. Lorem Ipsum has been
 							the industry's standard dummy text ever since the 1500s.</p>
@@ -382,6 +385,116 @@
 			</div>
 		</div>
 		<!-- End Jumbotron -->
+		<!-- Start Form -->
+		<div class="container">
+			<div class="row my-5">
+				<div class="col-12 text-center">
+					<h1 class="display-4"><i class="far fa-file-alt text-primary"></i> Título Formulário</h1>
+					<p>Texto descritivo do formulário</p>
+				</div>
+			</div>
+			<div class="row justify-content-center mb-5">
+				<div class="col-sm-12 col-md-10 col-lg-8">
+					<form action="">
+						<div class="form-row">
+							<div class="form-group col-sm-6">
+								<label for="inputNome">Seu Nome</label>
+								<input type="text" class="form-control" id="inputNome" placeholder="Nome">
+							</div>
+							<div class="form-group col-sm-6">
+								<label for="inputSobrenome">Seu Sobrenome</label>
+								<input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+							</div>
+							<div class="form-group col-sm-12">
+								<label for="inputEnd">Seu Endereço</label>
+								<input type="text" class="form-control" id="inputEnd" placeholder="Enderço completo">
+							</div>
+							<div class="form-group col-sm-4">
+								<label for="inputCep">Seu CEP</label>
+								<input type="text" class="form-control" id="inputCep" placeholder="Cep">
+							</div>
+							<div class="form-group col-sm-4">
+								<label for="inputCidade">Sua Cidade</label>
+								<input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+							</div>
+							<div class="form-group col-sm-4">
+								<label for="selectEst">Seu Estado</label>
+								<select name="estado" id="selectEst" class="form-control">
+									<option value="..." selected>Escolha ...</option>
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AP">Amapá</option>
+									<option value="AM">Amazonas</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espírito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PR">Paraná</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SP">São Paulo</option>
+									<option value="SE">Sergipe</option>
+									<option value="TO">Tocantins</option>
+									<option value="EX">Estrangeiro</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-3">
+								<label for="inputTel">Seu Telefone</label>
+								<input type="text" class="form-control" id="inputTel" placeholder="Telefone">
+							</div>
+							<div class="form-group col-sm-3">
+								<label for="inputCel">Seu Celular</label>
+								<input type="text" class="form-control" id="inputCel" placeholder="Celular">
+							</div>
+							<div class="form-group col-sm-6">
+								<label for="inputEmail">Seu E-mail </label>
+
+								<!-- Start Popover -->
+								<label><a tabindex="0" role="button" data-toggle="popover" data-placement="right"
+										data-trigger="focus" title="Dica de E-mail"
+										data-content="Escreva seu melhor e-mail para cadastro e receber novidades."><i
+											class="far fa-question-circle text-primary"></i></a>
+								</label>
+								<!-- End Popover -->
+
+								<input type="text" class="form-control" id="inputEmail" placeholder="E-mail">
+							</div>
+
+							<div class="form-group col-sm-10">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" id="inputCheckEmail"> Desejo receber
+										novidades por e-mail!
+									</label>
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" id="inputCheckCel"> Desejo receber
+										novidades por whatsApp!
+									</label>
+								</div>
+							</div>
+							<div class="form-group col-sm-2 mx-auto">
+								<button type="submit" class="btn btn-primary">Enviar</button>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- End Form -->
 	</main>
 	<!-- Start Footer -->
 	<footer>
@@ -534,6 +647,14 @@
 	<script src="node_modules/jquery/dist/jquery.js"></script>
 	<script src="node_modules/popper.js/dist/umd/popper.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+	<!-- Popover -->
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		});
+	</script>
+
 </body>
 
 </html>
